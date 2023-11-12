@@ -1,3 +1,20 @@
-#callIcon{
-    import {PermPhoneMsgOutlinedIcon} from '@mui/icons-material/PermPhoneMsgOutlined';
+header{
+    display: flex;
+    justify-content: space-between;
+    font-size: 10px;
+}
+#logo{
+    width: 150px;
+}
+.icons{
+    margin-top: 15px;
+    height: 40px;
+    filter: invert(44%) sepia(59%) saturate(2657%) hue-rotate(164deg) brightness(98%) contrast(101%);
+}
+.contact{
+    display: flex;
+}
+.contact-text{
+    margin-top: 10px;
+    margin-left: 15px;
 }
