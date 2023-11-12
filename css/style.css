@@ -1,9 +1,11 @@
+body{
+    margin: 0;
+}
 header{
     display: flex;
     justify-content: space-between;
     font-size: 10px;
-    padding-left: 150px;
-    padding-right: 150px;
+    padding: 0px 150px;
 }
 .info{
     width: 100%;
@@ -25,4 +27,19 @@ header{
 .contact-text{
     margin-top: 10px;
     margin-left: 15px;
+}
+nav{
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    background-color: #1F2C8C;
+    color: #fff;
+    padding: 0px 150px;
+}
+.hero-content{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1000px;
+    width: 100%;
+    background-image: url(../img/people-roof-talking-roof.jpg);
 }
