@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap" rel="stylesheet">
 
 </head>
 
@@ -14,20 +16,50 @@
     <!-- Header Section -->
     <section>
         <header>
-            <div>
-                <img src="img/website-logo.jpg" alt="website-logo">
-                <div>
-                    <h1>Call Us today</h1>
+            <img id="logo" src="img/website-logo.png" alt="website-logo">
+            <div class="info">
+                <div class="contact">
+                    <img class="icons" src="img/icons/call-icon.svg" alt="call-icon">
+                    <div class="contact-text">
+                        <p class="header-text">Call Us Today!</p>
+                        <p class="cell-no">978-388-5752</p>
+                    </div>
                 </div>
-                <div>
-                    <h1>Address</h1>
-                </div>
-                <div>
-                    <img src="" alt="">
-                    <img src="" alt="">
+                <div class="contact">
+                    <img class="icons" src="img/icons/location-icon.svg" alt="location-icon">
+                    <div class="contact-text">
+                        <p class="header-text">9 Amesbury Avenue</p>
+                        <p class="header-text">Amesbury, MA 01913</p>
+                    </div>
                 </div>
             </div>
+            <div class="contact">
+                <img src="img/icons/facebook-logo.svg" alt="facebook-logo">
+                <img src="img/icons/twitter-logo.svg" alt="twitter-logo">
+            </div>
         </header>
+        <nav>
+            <p id="current">Home</p>
+            <p>About Us</p>
+            <p>Custom Metal Fabrication</p>
+            <p>Roofing Services</p>
+            <p>Our Blog</p>
+            <p>Contact Us</p>
+        </nav>
+    </section>
+
+    <!-- Hero Section -->
+    <section id="hero-section">
+        <div class="hero-content">
+            <div class="banner">
+                <div class="banner-text">
+                    <p>Quality Roofing Solutions You Deserve</p>
+                </div>
+                <div>
+                    <button class="button">Learn More About Us</button>
+                </div>
+            </div>
+        </div>
     </section>
 </body>
 

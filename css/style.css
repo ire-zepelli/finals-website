@@ -1,3 +1,104 @@
-#callIcon{
-    import {PermPhoneMsgOutlinedIcon} from '@mui/icons-material/PermPhoneMsgOutlined';
+body {
+    margin: 0;
+}
+
+section {
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 10px;
+    padding: 0px 150px;
+}
+
+.info {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 10%;
+    gap: 80px;
+}
+
+#logo {
+    width: 150px;
+}
+
+.icons {
+    margin-top: 15px;
+    height: 40px;
+    filter: invert(55%) sepia(22%) saturate(759%) hue-rotate(195deg) brightness(88%) contrast(92%);
+}
+
+.contact {
+    display: flex;
+}
+
+.contact-text {
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+nav {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    background-color: #1F2C8C;
+    color: #fff;
+    padding: 0px 150px;
+}
+
+.hero-content {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1000px;
+    width: 100%;
+    background-image: url(../img/people-roof-talking-roof.jpg);
+    position: absolute;
+}
+
+.header-text {
+    margin: 0;
+    padding-top: 5px;
+    font-size: 15px;
+}
+
+.cell-no {
+    margin: 0;
+    margin-top: 5px;
+    font-size: 20px;
+    color: #d1b47d;
+}
+
+#current {
+    border-bottom: 5px solid #d1b47d;
+    padding: 0 0 4px;
+}
+
+.banner {
+    display: flex;
+    justify-content: space-around;
+    background: rgba(0, 0, 0, 0.4);
+    position: relative;
+    height: 200px;
+    margin-top: 400px;
+}
+
+.banner-text {
+    font-size: 40px;
+    color: #fff;
+    padding-top: 30px;
+}
+
+.button {
+    margin-top: 60px;
+    background-color: #d1b47d;
+    border: none;
+    color: white;
+    padding: 30px 62px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
 }
