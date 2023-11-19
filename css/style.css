@@ -3,7 +3,11 @@ body {
 }
 
 section {
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: 'Jura', sans-serif;
+}
+strong{
+    font-family: 'Teko', sans-serif;
+    font-size: 29px;
 }
 
 header {
@@ -34,6 +38,16 @@ header {
 .contact {
     display: flex;
 }
+.contact-icons{
+    transition: 0.3s;
+}
+
+.contact-icons:hover{
+    padding-bottom: 10px;
+    cursor: pointer;
+    opacity: 0.4;
+    transition: 0.3s;
+}
 
 .contact-text {
     margin-top: 10px;
@@ -46,15 +60,39 @@ nav {
     justify-content: space-between;
     background-color: #1F2C8C;
     color: #fff;
-    padding: 0px 150px;
+    padding: 10px 150px;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+    margin: 0px;
+    padding: 0px;
 }
 
+#current{
+    border-bottom: solid;
+    border-width: 5px;
+    border-color: #CEAF78;
+}
+
+.nav-text{
+    margin: 0px;
+    font-size: 20px;
+    padding: 10px 0px;
+}
+
+a:hover{
+    border-bottom: solid;
+    border-width: 5px;
+    border-color: #CEAF78;
+    transition: 0.1s;
+}
 .hero-content {
     background-repeat: no-repeat;
     background-size: cover;
-    height: 1000px;
+    height: 700px;
     width: 100%;
-    background-image: url(../img/people-roof-talking-roof.jpg);
+    background-image: url(../img/hero-section/people-roof-talking-roof.jpg);
     position: absolute;
 }
 
@@ -68,12 +106,7 @@ nav {
     margin: 0;
     margin-top: 5px;
     font-size: 20px;
-    color: #d1b47d;
-}
-
-#current {
-    border-bottom: 5px solid #d1b47d;
-    padding: 0 0 4px;
+    color: #D0B27E;
 }
 
 .banner {
@@ -83,6 +116,7 @@ nav {
     position: relative;
     height: 200px;
     margin-top: 400px;
+    margin-bottom: 50px;
 }
 
 .banner-text {
@@ -92,13 +126,72 @@ nav {
 }
 
 .button {
-    margin-top: 60px;
-    background-color: #d1b47d;
+    margin-top: 70px;
+    font-family: 'Jura', sans-serif;
+    background-color: #CEAF78;
     border: none;
-    color: white;
-    padding: 30px 62px;
+    color: #fff;
+    padding: 25px 62px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+button:hover{
+    transition: 0.5s;
+    cursor: pointer;
+    background-color: #1F2C8C;
+}
+
+#hb-box2, #hb-box3{
+    margin: 0px;
+    padding: 40px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    width: 300px;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+#hero-bottom{
+    display: flex;
+    justify-content: center;
+    padding: 0px 50px;
+    gap: 50px;
+}
+.hb-icon{
+    width: 80px;
+    filter: invert(65%) sepia(40%) saturate(355%) hue-rotate(360deg) brightness(103%) contrast(85%);
+}
+.hb-btn {
+    font-family: 'Jura', sans-serif;
+    background-color: #CEAF78;
+    border: none;
+    color: #fff;
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+button:hover{
+    transition: 0.5s;
+    cursor: pointer;
+    background-color: #1F2C8C;
+}
+.hb-text{
+    margin: 0;
+    font-size: 20px;
+}
+.hb-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
