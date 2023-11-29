@@ -1,17 +1,19 @@
 body {
   margin: 0;
+  letter-spacing: 2px;
 }
 
 section {
-  font-family: "Jura", sans-serif;
+  font-family: 'Jura', sans-serif;
 }
-strong {
-  font-family: "Teko", sans-serif;
+
+strong{
+  font-family: 'Teko', sans-serif;
   font-size: 29px;
 }
 
 /* Header Section */
-header {
+header { 
   display: flex;
   justify-content: space-between;
   font-size: 10px;
@@ -33,18 +35,18 @@ header {
 .icons {
   margin-top: 15px;
   height: 40px;
-  filter: invert(55%) sepia(22%) saturate(759%) hue-rotate(195deg)
-    brightness(88%) contrast(92%);
+  filter: invert(55%) sepia(22%) saturate(759%) hue-rotate(195deg) brightness(88%) contrast(92%);
 }
 
 .contact {
   display: flex;
 }
-.contact-icons {
+
+.contact-icons{
   transition: 0.3s;
 }
 
-.contact-icons:hover {
+.contact-icons:hover{
   padding-bottom: 10px;
   cursor: pointer;
   opacity: 0.4;
@@ -60,37 +62,49 @@ nav {
   margin: 0;
   display: flex;
   justify-content: space-between;
-  background-color: #1f2c8c;
+  background-color: #1F2C8C;
   color: #fff;
   padding: 10px 150px;
 }
-a {
+
+a{
   text-decoration: none;
   color: #fff;
   margin: 0px;
   padding: 0px;
 }
 
-#current {
+#current{
   border-bottom: solid;
   border-width: 5px;
-  border-color: #ceaf78;
+  border-color: #CEAF78;
 }
 
-.nav-text {
+.nav-text{
   margin: 0px;
   font-size: 20px;
   padding: 10px 0px;
+  position: relative;
 }
 
-a:hover {
-  border-bottom: solid;
-  border-width: 5px;
-  border-color: #ceaf78;
-  transition: 0.1s;
+.nav-text::before{
+  content: '';
+  width: 0;
+  height: 5px;
+  background-color: #CEAF78;
+  position: absolute;
+  bottom: -.25rem;
+  left: 50%;
+  transition: width .4s, left .4s;
 }
+
+.nav-text:hover::before{
+  width: 100%;
+  left: 0;
+}
+
 /* Hero Section */
-.hero-content {
+.hero-content {                       
   background-repeat: no-repeat;
   background-size: cover;
   height: 700px;
@@ -109,13 +123,13 @@ a:hover {
   margin: 0;
   margin-top: 5px;
   font-size: 20px;
-  color: #d0b27e;
+  color: #D0B27E;
 }
 
 .banner {
   display: flex;
   justify-content: space-around;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.61);
   position: relative;
   height: 200px;
   margin-top: 400px;
@@ -123,33 +137,38 @@ a:hover {
 }
 
 .banner-text {
-  font-size: 40px;
+  font-size: 60px;
   color: #fff;
-  padding-top: 30px;
+  letter-spacing: 3px;
+  font-family: 'Teko', sans-serif;
+  font-weight: bolder;
 }
 
 .button {
   margin-top: 70px;
-  font-family: "Jura", sans-serif;
-  background-color: #ceaf78;
-  border: none;
+  background-color:#CEAF78;
   color: #fff;
-  padding: 25px 62px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
+  border: none;
+  padding:25px 62px;;
   font-size: 20px;
-  transition: 0.5s;
+  font-weight: bolder;
+  letter-spacing: 2px;
+  box-shadow: 2px 2px 10px #CEAF78;
+  transition: all 0.5s ease-in-out;
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 }
 
-button:hover {
-  transition: 0.5s;
-  cursor: pointer;
-  background-color: #1f2c8c;
+.button:hover{
+  background-color: #2f3640;
+  color: #CEAF78;
+  box-shadow: 2px 2px 15px #dee0e2;
+  transform: translateY(-2px);
 }
 
-#hb-box2,
-#hb-box3 {
+#hb-box2, #hb-box3{
   margin: 0px;
   padding: 40px;
   position: relative;
@@ -160,50 +179,75 @@ button:hover {
   gap: 5px;
   width: 300px;
   background-color: #fff;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
-    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
-#hero-bottom {
+#hero-bottom{
   display: flex;
   justify-content: center;
   padding: 0px 50px;
   gap: 50px;
 }
-.hb-icon {
+.hb-icon{
   width: 80px;
-  filter: invert(65%) sepia(40%) saturate(355%) hue-rotate(360deg)
-    brightness(103%) contrast(85%);
+  filter: invert(65%) sepia(40%) saturate(355%) hue-rotate(360deg) brightness(103%) contrast(85%);
 }
 .smol-btn {
-  font-family: "Jura", sans-serif;
-  background-color: #ceaf78;
-  border: none;
   color: #fff;
-  padding: 10px 30px;
-  text-align: center;
-  text-decoration: none;
+  --color: #1F2C8C;
+  font-family: 'Jura', sans-serif;
   display: inline-block;
+  overflow: hidden;
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px 30px;
   font-size: 20px;
-  transition: 0.5s;
+  z-index: 1;
+  background-color: #CEAF78;
+  border: none;
+  position: relative;
 }
 
-button:hover {
-  transition: 0.5s;
-  cursor: pointer;
-  background-color: #1f2c8c;
+button::before {
+  position: absolute;
+  content: "";
+  background: var(--color);
+  width: 250px;
+  height: 200px;
+  z-index: -1;
+  border-radius: 50%;
+
 }
-.hb-text {
+
+button:hover{
+  color: white;
+  cursor: pointer;
+}
+
+
+button:before {
+  top: 100%;
+  left: 100%;
+  transition: .3s all;
+}
+
+
+button:hover::before {
+  top: -30px;
+  left: -30px;
+}
+
+.hb-text{
   margin: 0;
   font-size: 20px;
 }
-.hb-title {
+.hb-title{
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 /* Introduction Section */
-#introduction {
+#introduction{                         
   display: flex;
   align-items: center;
   text-align: center;
@@ -211,21 +255,23 @@ button:hover {
   flex-direction: column;
   margin-top: 75rem;
 }
-.intro-text {
+.intro-text{
   margin: 0;
   font-size: 20px;
+  letter-spacing: 1px;
+  line-height: 1.5;
 }
-.intro-title {
+.intro-title{
   margin: 0;
   font-size: 50px;
-  font-family: "Teko", sans-serif;
+  font-family: 'Teko', sans-serif;
 }
-.colorBlue {
-  color: #1f2c8c;
+.colorBlue{
+  color: #1F2C8C;
 }
 
 /* Services Section */
-.serv-box {
+.serv-box{
   margin: 0px;
   padding-top: 15px;
   display: flex;
@@ -234,7 +280,7 @@ button:hover {
   align-items: start;
   width: fit-content;
 }
-#services {
+#services{
   margin-top: 100px;
   display: flex;
   justify-content: center;
@@ -242,67 +288,150 @@ button:hover {
   width: 100%;
   height: 500px;
 }
-.border {
+.border{
   width: 100px;
-  border-top: 2px solid #d0b27e;
+  border-top: 2px solid #D0B27E;
 }
 
 /* Mission Section */
-#mission {
+#mission{                                  
   margin-top: 100px;
-  left: 0;
+  left: 0;    
   right: 0;
   display: flex;
   justify-content: flex-start;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
 }
-#mission-text {
+
+#mission-text{
   display: flex;
   justify-content: center;
   gap: 10px;
   flex-direction: column;
   align-items: flex-start;
-  background-color: #1f2c8c;
+  background-color: #1F2C8C;
   color: #fff;
-  padding-left: 50px;
-  width: 50%;
+  font-size: 18px;
+  padding-left: 8.5%;
+  width: 40%;
+  padding-left: 5% 0 0 10%;
+  letter-spacing: 2px;
+  line-height: 1.5;
 }
-#mission-img {
+
+#mission-img{
   overflow: hidden;
 }
-.mission-btn {
-  margin-top: 30px;
-  font-family: "Jura", sans-serif;
-  background-color: #ceaf78;
-  border: none;
-  color: #fff;
-  padding: 10px 30px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
+.mission-btn{
+  margin-top: 10%;
+  font-family: 'Jura', sans-serif;
+  --primary-color: #CEAF78;
+  --secondary-color: #fff;
+  --hover-color: #ffffff;
+  --arrow-width: 10px;
+  --arrow-stroke: 2px;
+  border: 0;
+  border-radius: 2rem;
+  color: var(--secondary-color);
+  padding: 10px 30px;;
+  background: var(--primary-color);
+  display: flex;
+  transition: 0.2s;
+  align-items: center;
+  gap: 0.6em;
+  font-weight: bold;
   font-size: 20px;
-  transition: 0.5s;
 }
-.mission-btn:hover {
-  transition: 0.5s;
+
+.mission-btn:hover{
+  transition: 0.2s;
   cursor: pointer;
   background-color: #fff;
   color: #000;
 }
 
+.arrow-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrow {
+  margin-top: 1px;
+  width: var(--arrow-width);
+  background: var(--primary-color);
+  height: var(--arrow-stroke);
+  position: relative;
+  transition: 0.1s;
+}
+
+.arrow::before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  border: solid;
+  border-width: 0 var(--arrow-stroke) var(--arrow-stroke) 0;
+  display: inline-block;
+  top: -3px;
+  right: 3px;
+  transition: 0.2s;
+  padding: 3px;
+  transform: rotate(-45deg);
+}
+
+.mission-btn:hover {
+  background-color: var(--hover-color);
+  color: black;
+}
+
+button:hover .arrow {
+  background: black;
+}
+
+button:hover .arrow:before {
+  right: 0;
+}
+
+
+#imgbox{
+  width: 60%;
+  height: 50vh;
+  position: relative;
+  overflow: hidden;
+  align-items: flex-end;
+}
+
+#imgbox::before{
+  content: '';
+  position: absolute;
+  left: -6.1em;
+  top: 50%;
+  transform: 
+      translateY(-60%) rotate(14deg);
+  background: #1F2C8C;
+  width: 25%;
+  height: 140%;
+}
+
+
 /* FEATURED SECTION */
-#featured {
+#featured{
   margin-top: 60px;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  letter-spacing: 2px;
+  line-height: 1.5;
 }
-.featured-title {
+.featured-title{
   margin: 0;
   font-size: 50px;
-  font-family: "Teko", sans-serif;
+  font-family: 'Teko', sans-serif;
 }
-.featured-text {
+.featured-text{
   margin: 0;
   font-size: 20px;
 }
@@ -361,3 +490,75 @@ button:hover {
   width: 483px;
   height: 355px;
 }
+
+/*Footer section*/
+footer{                                 
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+  background-color: #1F2C8C;
+  text-align: center;
+  padding: 4% 0 2% 0;
+  color: #fff;
+  letter-spacing: 3px;
+  line-height: 1.5;
+}
+
+#contact-num{
+  color: #e29e20;
+  font-weight: bold;
+  font-size: large;
+}
+
+.solid{
+  border-top: 2px solid #bbb;
+  width: 85%;
+  margin-top: 5%;
+  align-items: center;
+}
+
+
+#nav-footer{
+  display: flex;
+  color: #fff;
+  justify-content: center;
+  padding-top: 15px;
+  gap: 8%;
+  font-size: 15px;
+  font-weight: bolder;
+  font-family: sans-serif;
+}
+.nav-footer{
+  margin: 0%;
+  color: #fff;
+  line-height: 2;
+  position: relative;
+}
+
+.nav-footer::before{
+  content: '';
+  width: 0;
+  height: 5px;
+  background-color: #CEAF78;
+  position: absolute;
+  bottom: -.25rem;
+  left: 50%;
+  transition: width .4s, left .4s;
+}
+
+.nav-footer:hover::before{
+  width: 100%;
+  left: 0;
+}
+
+#highlight{
+  margin-top: 3px;
+  border-bottom: solid;
+  border-width: 5px;
+  border-color: #CEAF78;
+}
+
+#copyright{
+  padding-top: 12px;
+  text-align: center;
+}  
