@@ -1,6 +1,7 @@
 body {
   margin: 0;
   letter-spacing: 2px;
+  overflow-x: hidden;
 }
 
 section {
