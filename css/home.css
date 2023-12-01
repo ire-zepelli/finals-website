@@ -249,6 +249,7 @@ button:hover {
 
 /* Mission Section */
 #mission {
+  height: 624px;
   margin-top: 100px;
   left: 0;
   right: 0;
@@ -313,12 +314,13 @@ button:hover {
 }
 .slider {
   height: 100%;
+  width: 400%;
   display: flex;
-  width: 100%;
+  justify-content: flex-start;
   transition: all 0.3s;
+  gap: 35px
 }
 .slider section {
-  flex-basis: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
