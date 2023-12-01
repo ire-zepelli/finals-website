@@ -361,3 +361,37 @@ button:hover {
   width: 483px;
   height: 355px;
 }
+/* Footer Top */
+footer{
+  color: #fff;
+  background-color: #1f2c8c;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 30px;
+}
+#footerTop{
+  margin-top: 100px;
+}
+#contact-num{
+  color: #ceaf78;
+}
+#footerNav{
+  width: 100%;
+}
+hr{
+  width: 80%;
+  color: #fff;
+}
+#smol-nav{
+  margin: 0;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  background-color: #1f2c8c;
+  color: #fff;
+  padding: 10px 150px;
+}
