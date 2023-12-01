@@ -92,16 +92,16 @@ thirdSliderBtn.addEventListener("click", function () {
   currentIndex = 2;
   setTimeout(function () {
     slider.innerHTML = `
-    <section> 
-    <img class="featured-img" src="img/featured-sectiion/featured-3.jpg" alt="featured-img"/>
-    </section>
-    <section>
-     <img class="featured-img" src="img/featured-sectiion/featured-1.jpg" alt="featured-img"/>
-     </section>
-     <section>
-    <img class="featured-img" src="img/featured-sectiion/featured-2.jpg" alt="featured-img"/>
-    </section>
-      `;
+                    <section> 
+                    <img class="featured-img" src="img/featured-sectiion/featured-3.jpg" alt="featured-img"/>
+                    </section>
+                    <section>
+                    <img class="featured-img" src="img/featured-sectiion/featured-1.jpg" alt="featured-img"/>
+                    </section>
+                    <section>
+                    <img class="featured-img" src="img/featured-sectiion/featured-2.jpg" alt="featured-img"/>
+                    </section>
+                      `;
     slider.style.opacity = "1";
   }, 150);
 });
