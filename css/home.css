@@ -55,7 +55,6 @@ header {
   margin-top: 10px;
   margin-left: 15px;
 }
-
 nav {
   margin: 0;
   display: flex;
@@ -164,10 +163,11 @@ button:hover {
     rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
 #hero-bottom {
+  width: 100%;
   display: flex;
   justify-content: center;
-  padding: 0px 50px;
-  gap: 50px;
+  gap: 20px;
+  overflow-x: hidden;
 }
 .hb-icon {
   width: 80px;
@@ -241,6 +241,7 @@ button:hover {
   gap: 30px;
   width: 100%;
   height: 500px;
+  overflow-x: hidden;
 }
 .border {
   width: 100px;
@@ -399,4 +400,17 @@ hr{
   background-color: #1f2c8c;
   color: #fff;
   padding: 10px 150px;
+}
+/* MISC */
+#burger-btn{
+  background-color: rgb(89, 84, 84);
+  border-radius: 10px;
+  display: none;
+}
+#burger-btn:hover{
+  background-color: #fff;
+  cursor: pointer;
+}
+#burger-btn img{
+  width: 40px;
 }
