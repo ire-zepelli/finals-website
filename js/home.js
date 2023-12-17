@@ -6,6 +6,9 @@ const botBurger = document.getElementById('smol-brg');
 const botNavContainer = document.getElementById("smol-nav");
 const botNav = document.querySelectorAll('.botnav');
 
+const inquireButton = document.querySelectorAll('.inquire');
+console.log(inquireButton);
+
 const slider = document.querySelector(".slider");
 const leftArrow = document.querySelector(".left");
 const rightArrow = document.querySelector(".right");
@@ -170,3 +173,10 @@ botBurger.addEventListener('click', ()=>{
 
   isBotClicked = !isBotClicked;
 });
+
+for(let i = 0; i < inquireButton.length; i++){
+  inquireButton[i].addEventListener('click', ()=>{
+    console.log('button clicked');
+    window.location.href = "inquiry.html"
+  });
+}
