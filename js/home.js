@@ -1,8 +1,14 @@
-const slider = document.querySelector(".slider");
+const topBurger = document.getElementById("burger-btn");
+const topNav = document.querySelectorAll('.topnav');
+const topNavContainer = document.querySelector('.header-nav');
 
+const botBurger = document.getElementById('smol-brg');
+const botNavContainer = document.getElementById("smol-nav");
+const botNav = document.querySelectorAll('.botnav');
+
+const slider = document.querySelector(".slider");
 const leftArrow = document.querySelector(".left");
 const rightArrow = document.querySelector(".right");
-
 const firstSliderBtn = document.querySelector(
   ".buttons > .slider-btn:first-child"
 );
@@ -131,4 +137,36 @@ leftArrow.addEventListener("click", function () {
   console.log(currentIndex);
   updateSelectedButton(selectedBtn.previousElementSibling);
   currentIndex = currentIndex < 0 ? 2 : currentIndex;
+});
+
+var isTopClicked = false;
+var isBotClicked = false;
+
+topBurger.addEventListener('click', () => {
+  for (let i = 0; i < topNav.length; i++) {
+    if (!isTopClicked) {
+      topNav[i].style.display = "flex";
+      topNav[i].style.margin = "0px 10px";
+      topNavContainer.style.flexWrap = "wrap";
+    } else {
+      topNav[i].style.display = "none";
+    }
+  }
+  
+  isTopClicked = !isTopClicked; // Toggle the state
+});
+
+botBurger.addEventListener('click', ()=>{
+  for(let i = 0; i < botNav.length; i++){
+    if(!isBotClicked){
+      botNav[i].style.display = "flex";
+      botNavContainer.style.flexDirection = "column";
+      botNavContainer.style.alignItems ="center"
+    }
+    else{
+      botNav[i].style.display = 'none'
+    }
+  }
+
+  isBotClicked = !isBotClicked;
 });
