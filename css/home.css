@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@700&display=swap');
 body {
   margin: 0;
 }
@@ -11,6 +12,10 @@ strong {
 }
 
 /* Header Section */
+#header{
+  width: 100%;
+  overflow: hidden;
+}
 header {
   display: flex;
   justify-content: space-between;
@@ -58,10 +63,10 @@ header {
 nav {
   margin: 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   background-color: #1f2c8c;
   color: #fff;
-  padding: 10px 150px;
+  padding: 10px;
 }
 a {
   text-decoration: none;
@@ -89,6 +94,10 @@ a:hover {
   transition: 0.1s;
 }
 /* Hero Section */
+#hero-section{
+  width: 100%;
+  overflow-x: hidden;
+}
 .hero-content {
   background-repeat: no-repeat;
   background-size: cover;
@@ -112,6 +121,7 @@ a:hover {
 }
 
 .banner {
+  width: 100%;
   display: flex;
   justify-content: space-around;
   background: rgba(0, 0, 0, 0.4);
@@ -119,6 +129,7 @@ a:hover {
   height: 200px;
   margin-top: 400px;
   margin-bottom: 50px;
+  flex-wrap: wrap;
 }
 
 .banner-text {
@@ -146,7 +157,12 @@ button:hover {
   cursor: pointer;
   background-color: #1f2c8c;
 }
-
+#hb-wrapper{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
 #hb-box2,
 #hb-box3 {
   margin: 0px;
@@ -167,7 +183,7 @@ button:hover {
   display: flex;
   justify-content: center;
   gap: 20px;
-  overflow-x: hidden;
+  flex-wrap: wrap;
 }
 .hb-icon {
   width: 80px;
@@ -201,6 +217,9 @@ button:hover {
   flex-direction: column;
   align-items: center;
 }
+.hb-title strong{
+  font-weight: 500;
+}
 
 /* Introduction Section */
 #introduction {
@@ -209,13 +228,19 @@ button:hover {
   text-align: center;
   justify-content: center;
   flex-direction: column;
-  margin-top: 75rem;
+  margin-top: 72rem;
+}
+.intro-title{
+  font-size: 20px;
+  padding: 0px 100px;
+  letter-spacing: 9px;
 }
 .intro-text {
   margin: 0;
   font-size: 20px;
+  padding: 0px 100px;
 }
-.intro-title {
+.title {
   margin: 0;
   font-size: 50px;
   font-family: "Teko", sans-serif;
@@ -234,6 +259,10 @@ button:hover {
   align-items: start;
   width: fit-content;
 }
+.serv-title strong{
+  font-weight: 500;
+  font: 32px;
+}
 #services {
   margin-top: 100px;
   display: flex;
@@ -241,7 +270,12 @@ button:hover {
   gap: 30px;
   width: 100%;
   height: 500px;
-  overflow-x: hidden;
+  flex-wrap: wrap;
+  height: fit-content;
+}
+.sev-text {
+  margin: 20px 0;
+  font-size: 20px;
 }
 .border {
   width: 100px;
@@ -255,18 +289,24 @@ button:hover {
   left: 0;
   right: 0;
   display: flex;
+  flex-direction: row-reverse;
   justify-content: center;
+  overflow: hidden;
+}
+.mission-text{
+    margin: 0;
+    font-size: 20px;
 }
 #mission-text {
   display: flex;
-  justify-content: center;
-  gap: 10px;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: start;
+  justify-content: center;
+  padding-left: 50px;
+  gap: 10px;
   background-color: #1f2c8c;
   color: #fff;
-  padding-left: 50px;
-  width: 50%;
+  width: 47%;
 }
 
 #imgbox {
@@ -295,6 +335,8 @@ button:hover {
 
 /* FEATURED SECTION */
 #featured {
+  overflow: hidden;
+  width: 100%;
   margin-top: 60px;
   display: flex;
   justify-content: center;
@@ -318,11 +360,12 @@ button:hover {
 }
 .slider {
   height: 100%;
-  width: 400%;
+  width: 100%;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   transition: all 0.3s;
-  gap: 35px
+  gap: 35px;
+  overflow: hidden;
 }
 .slider section {
   display: flex;
@@ -369,6 +412,8 @@ button:hover {
 }
 /* Footer Top */
 footer{
+  width: 100%;
+  font-family: "Jura", sans-serif;
   color: #fff;
   background-color: #1f2c8c;
   display: flex;
@@ -377,17 +422,34 @@ footer{
   align-items: center;
   text-align: center;
   gap: 30px;
+  padding-bottom: 50px;
 }
 #footerTop{
   margin-top: 100px;
 }
+#footerTop h1{
+  font-size: 50px;
+  letter-spacing: 1px;
+}
 #contact-num{
   color: #ceaf78;
+  padding: 10px;
 }
 #footerNav{
   width: 100%;
 }
+#footer-title{
+    margin: 0;
+    font-size: 20px;
+    letter-spacing: 5px;
+}
+.footer-text {
+  margin: 0px;
+  font-size: 20px;
+  padding: 10px;
+}
 hr{
+  margin-top: 50px;
   width: 80%;
   color: #fff;
 }
@@ -396,21 +458,169 @@ hr{
   font-size: 20px;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 50px;
   background-color: #1f2c8c;
   color: #fff;
   padding: 10px 150px;
 }
 /* MISC */
-#burger-btn{
-  background-color: rgb(89, 84, 84);
-  border-radius: 10px;
+#burger-btn, #smol-brg{
   display: none;
-}
-#burger-btn:hover{
-  background-color: #fff;
+  border: none;
   cursor: pointer;
+  background-color: #1f2c8c;
 }
-#burger-btn img{
+#burger-btn img, #smol-brg img{
   width: 40px;
+}
+@media screen and (max-width: 1284px) {
+  #smol-nav{
+    justify-content: center;
+   }
+   #smol-nav a{
+    display: none;
+   }
+   #smol-brg{
+    display: block;
+   }
+}
+@media screen and (max-width: 1047px) {
+.info{
+  display: flex;
+  justify-content: space-between;
+  padding: 0px;
+  width: 100%;
+  order: 1;
+}
+ header{
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0px;
+  overflow: hidden;
+  height: 180px;
+  padding: 0px 20px;
+ }
+ .header-nav a{
+  display: none;
+ }
+ .header-nav{
+  justify-content: start;
+ }
+ #burger-btn{
+  display: block;
+ }
+
+ #logo{
+  position: relative;
+  width: 300px;
+  top:59px;
+  order: -1;
+ }
+ .contact{
+  justify-content: space-between;
+  position: relative;
+  bottom: 60px;
+ }
+ .socials{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+ }
+}
+@media screen and (max-width: 1030px){
+  .button{
+    margin: 0px;
+   }
+   .banner{
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 250px;
+    margin-bottom: 40px;
+   }
+   .banner-text{
+    height: 30px;
+    margin: 0px;
+   }
+   #button-wrapper{
+    height: 100px;
+   };
+   .hero-content{
+    height: 800px;
+   }
+}
+@media screen and (max-width: 1476px){
+ #introduction{
+    margin-top: 1500px;
+  }
+}
+@media screen and (min-width: 1476px){
+  #introduction{
+    margin-top: 1100px;
+
+  }
+}
+@media screen and (max-width: 770px){
+  #introduction {
+    margin-top: 1800px;
+  }
+}
+@media screen and (max-width: 711px)  {
+  .banner-text{
+    text-align: center;
+  }
+  .banner-text p{
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 676px){
+  #introduction {
+    margin-top: 1600px;
+  }
+  #hb-img{
+    width: 380px;
+  }
+  .info{
+    position: relative;
+    top:30px
+  }
+  #logo{
+    width: 200px;
+    top:30px
+  }
+  .info p{
+    font-size: 10px;
+  }
+  .info img{
+    width: 30px;
+    height: auto;
+  }
+}
+@media  screen and (max-width: 434px) {
+  #hb-img{
+    width: 380px;
+  }
+  #mission-text{
+    padding: 15px;
+  }
+  #mission-text h1{
+    font-size: 30px;
+  }
+  #mission-text p{
+    font-size: 15px;
+  }
+  #mission-text button{
+    font-size: 15px;
+  }
+  .intro-text{
+    padding: 0 10px;
+  }
+  #hero-bottom{
+    gap: 0px;
+  }
+  #hb-wrapper{
+    margin-top: 10px;
+  }
 }
