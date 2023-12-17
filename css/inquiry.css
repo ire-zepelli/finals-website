@@ -1,0 +1,609 @@
+body {
+    margin: 0;
+}
+
+section {
+  font-family: "Jura", sans-serif;
+}
+strong {
+  font-family: "Teko", sans-serif;
+  font-size: 29px;
+}
+
+
+/* Header Section */
+header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 10px;
+  padding: 0px 150px;
+}
+
+.info {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 10%;
+  gap: 80px;
+}
+
+#logo {
+  width: 150px;
+}
+
+.icons {
+  margin-top: 15px;
+  height: 40px;
+  filter: invert(55%) sepia(22%) saturate(759%) hue-rotate(195deg)
+    brightness(88%) contrast(92%);
+}
+
+.contact {
+  display: flex;
+}
+
+.contact-icons {
+  transition: 0.3s;
+}
+
+.contact-icons:hover {
+  padding-bottom: 10px;
+  cursor: pointer;
+  opacity: 0.4;
+  transition: 0.3s;
+}
+
+.contact-text {
+  margin-top: 10px;
+  margin-left: 15px;
+}
+nav {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  background-color: #1f2c8c;
+  color: #fff;
+  padding: 10px 150px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  margin: 0px;
+  padding: 0px;
+}
+
+.current {
+  border-bottom: solid;
+  border-width: 5px;
+  border-color: #ceaf78;
+}
+
+.nav-text {
+  margin: 0px;
+  font-size: 20px;
+  padding: 10px 0px;
+}
+
+a:hover {
+  border-bottom: solid;
+  border-width: 5px;
+  border-color: #ceaf78;
+  transition: 0.1s;
+}
+
+.header-text {
+  margin: 0;
+  padding-top: 5px;
+  font-size: 15px;
+}
+
+.cell-no {
+  margin: 0;
+  margin-top: 5px;
+  font-size: 20px;
+  color: #d0b27e;
+}
+/*Form section*/
+.container{
+  width: 100%;
+  height: 75vh;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  background-image: linear-gradient( 105.3deg,  rgba(30,39,107,1) 21.8%, rgba(77,118,221,1) 100.2% );
+
+}
+.img-container{
+  width: 700px;
+}
+
+#img-box{
+  width: 100%;
+  height: 100%;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  clip-path: polygon(100% 0, 100% 50%, 100% 100%, 10% 100%, 37% 48%, 10% 0);
+}
+
+#title{
+  color: #fff;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 60px;
+  letter-spacing: 0.4px;
+  word-spacing: 2px;
+  text-indent: 10%;
+  margin: 8% 0 5%;
+}
+
+.form {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  gap: 5px;
+  border-radius: 5px;
+  font-family: inherit;
+}
+
+.flex {
+  display: flex;
+  width: 96%;
+  gap: 12%;
+}
+
+#fname{
+  width: 100%;
+}
+
+#lname{
+  width: 200px;
+  margin-top: 31px;
+}
+
+
+#text-box{
+  margin-top: 10px;
+}
+
+.form label {
+  position: relative;
+  font-size: 18px;
+  padding-top: 10px;
+  color: #fff;
+}
+
+.input {
+  width: 92%;
+  font-size: 12px;
+  padding: 15px 10px;
+  border-radius: 5px;
+  border: none;
+  margin-top: 10px;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, .2), 0 .5px .5px rgba(0, 0, 0, .2);
+  outline: none;
+  letter-spacing: 3px;
+}
+
+.input:focus {
+  outline: 3px solid #edcf26;
+}
+
+textarea {
+  min-height: 80px;
+  max-width: 92%;
+}
+
+.submit-btn {
+  width: 80%;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 20px;
+  padding: 10px 15px;
+  color: rgb(8, 8, 8);
+  background-color: #e0ce6a;
+  border: 2px solid #e0ce6a;
+  margin: 30px 50px;
+}
+
+.submit-btn:hover {
+  border-color: #fff;
+  box-shadow: 0 0.5em 0.5em -0.5em #e0ce6a;
+  cursor: pointer;
+}
+
+.submit-btn:active {
+  box-shadow: 0 0.3em 1em -0.5em #e0ce6a;
+}
+
+
+
+/*Footer section*/
+footer{
+  color: #fff;
+  background-color: #1f2c8c;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 30px;
+}
+
+#footerTop{
+  margin-top: 100px;
+}
+
+#contact-num{
+  color: #ceaf78;
+}
+
+#footerNav{
+  width: 100%;
+}
+
+hr{
+  width: 80%;
+  color: #fff;
+}
+
+#smol-nav{
+  margin: 0;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  background-color: #1f2c8c;
+  color: #fff;
+  padding: 10px 150px;
+}
+
+p{
+  font-size: 20px;
+}
+  
+  .intro-title {
+    margin: 0;
+    font-size: 50px;
+    font-family: "Teko", sans-serif;
+  }
+  
+@media(max-width: 1024px){
+    header {
+      padding: 0px 100px;
+    }
+  
+    nav {
+      padding: 10px 100px;
+    }
+  
+    .img-container{
+      width: 500px;
+    }
+  
+    #lname{
+      width: 200px;
+      margin-top: 31px;
+    }
+  
+    #smol-nav{
+      gap: 25px;
+      font-size: 18px;
+    }
+  
+  }
+@media (max-width: 900px){
+    header {
+      padding: 0px 90px;
+    }
+  
+    #logo {
+      width: 120px;
+    }
+  
+    .icons {
+      margin-top: 10px;
+      height: 35px;
+  
+    }
+  
+    .header-text, .cell-no, .form label{
+      padding-top: 0;
+      font-size: 14px;
+    }
+  
+    nav {
+      padding: 10px 80px;
+    }
+  
+    .nav-text{
+      font-size: 18px;
+    }
+  
+    /*Form section*/
+    .container{
+      height: 65vh;
+    }
+  
+    #title{
+      font-size: 50px;
+      text-indent: 17%;
+    }
+  
+    #lname{
+      width: 158px;
+      margin-top: 27px;
+    }
+    
+    .flex {
+      width: 90%;
+      gap: 10%;
+    }
+  
+    .input {
+      width: 85%;
+      padding: 12px 8px;
+    }
+    
+    textarea {
+      min-height: 70px;
+    }
+  
+    .submit-btn {
+      width: 70%;
+      font-weight: 600;
+      font-size: 18px;
+      padding: 8px 12px;
+      margin: 25px 42px;
+    }
+  
+    /*Footer section*/
+    footer{  
+      gap: 20px;
+    }
+  
+    #footerTop{
+      margin-top: 65px;
+    }
+  
+    p{
+      font-size: 18px;
+    }
+  
+    .intro-title {
+      font-size: 50px;
+    }
+  
+    #smol-nav{
+      font-size: 12px;
+      gap: 20px;
+      padding: 10px 100px;
+    }
+  }
+  
+@media (max-width:768px){
+    /*Header Section*/
+    header {
+      padding: 2px 60px;
+    }
+  
+    #logo {
+      width: 100px;
+    }
+  
+    .info {
+      gap: 50px;
+    }
+    
+    .icons {
+      margin-top: 15px;
+      height: 30px;
+  
+    }
+  
+    .contact-icons{
+      width: 40px;
+    }
+  
+    .header-text, .cell-no, .form label{
+      padding-top: 0;
+      font-size: 12px;
+    }
+  
+    nav {
+      padding: 10px 60px;
+    }
+  
+    .nav-text{
+      font-size: 15px;
+    }
+  
+    /*Form Section*/
+    .container{
+      height: 50vh;
+    }
+  
+    .img-container{
+      width: 500px;
+    }
+  
+    .form {
+      gap: 2px;
+      margin-left: 10px;
+    }
+  
+    #fname{
+      width: 90%;
+    }
+  
+    #lname{
+      width: 135px;
+      margin-top: 25px;
+    }
+  
+    .flex {
+        width: 82%;
+        gap: 1%;
+    }
+  
+    #title{
+      font-size: 35px;
+      text-indent: 16%;
+    }
+    
+    .input {
+      width: 80%;
+      font-size: 10px;
+      padding: 10px 5px;
+    }
+  
+    textarea {
+      min-height: 45px;
+    }
+  
+    .submit-btn {
+      width: 60%;
+      font-weight: 400;
+      font-size: 15px;
+      padding: 5px 10px;
+      margin: 20px 40px;
+    }
+  
+    /*Footer section*/
+    footer{  
+      gap: 20px;
+    }
+  
+    #footerTop{
+      margin-top: 65px;
+    }
+  
+    p{
+      font-size: 15px;
+    }
+  
+    .intro-title {
+      font-size: 40px;
+    }
+  
+    #smol-nav{
+      font-size: 12px;
+      gap: 20px;
+      padding: 10px 100px;
+    }
+  }
+  
+@media (max-width:600px){
+    header {
+      margin: 0 30px;
+      padding: 5px 10px;
+    }
+  
+    #logo {
+      width: 80px;
+    }
+  
+    .info {
+      gap: 15px;
+      margin-left: 10px;
+    }
+    
+    .icons {
+      margin-top: 5px;
+      height: 25px;
+  
+    }
+    .contact-icons{
+      width: 30px;
+    }
+  
+    .header-text, .cell-no, .form label{
+      padding-top: 0;
+      font-size: 12px;
+    }
+  
+    .contact-text {
+      margin-top: 2px;
+      margin-left: 10px;
+    }
+  
+    nav {
+      padding: 10px 45px;
+    }
+  
+    .nav-text{
+      font-size: 12px;
+    }
+  
+     /*Form Section*/
+     .container{
+      width: 100%;
+      height: 45vh;
+    }
+  
+    .img-container{
+      width: 500px;
+    }
+  
+    .form {
+      gap: 2px;
+      margin-left: 10px;
+    }
+  
+    #fname{
+      width: 90%;
+    }
+  
+    #lname{
+      width: 120px;
+      margin-top: 25px;
+    }
+  
+    .flex {
+        width: 83%;
+    }
+  
+    #title{
+      font-size: 30px;
+      text-indent: 13%;
+    }
+    
+    .input {
+      width: 80%;
+      font-size: 10px;
+      padding: 8px 5px;
+    }
+  
+    .submit-btn {
+      width: 55%;
+      font-weight: 400;
+      font-size: 12px;
+      padding: 5px 5px;
+      margin: 20px 42px;
+    }
+  
+  
+    /*Footer section*/
+    footer{  
+      gap: 5px;
+    }
+  
+    #footerTop{
+      margin-top: 50px;
+    }
+  
+    p{
+      font-size: 12px;
+    }
+  
+    .intro-title {
+      font-size: 35px;
+    }
+  
+    #smol-nav{
+      font-size: 12px;
+      gap: 12px;
+      padding: 10px 60px;
+    }
+  }
+  

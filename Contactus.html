@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Division 7 - Roofing</title>
+  <link rel="icon" href="img/website-logo.png">
+  <link rel="stylesheet" href="css/ContactUs.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jura:wght@300;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap"
+      rel="stylesheet"
+    />
+</head>
+<body>
+      <!-- Header Section -->
+      <section>
+        <header>
+          <img id="logo" src="img/website-logo.png" alt="website-logo" />
+          <div class="info">
+            <div class="contact">
+              <img class="icons" src="img/icons/phone-call-icon.png " alt="call-icon" />
+              <div class="contact-text">
+                <p class="header-text">Call Us Today!</p>
+                <p class="cell-no">978-388-5752</p>
+              </div>
+            </div>
+            <div class="contact">
+              <img
+                class="icons"
+                src="img/icons/destination-icon.png"
+                alt="location-icon"
+              />
+              <div class="contact-text">
+                <p class="header-text">9 Amesbury Avenue</p>
+                <p class="header-text">Amesbury, MA 01913</p>
+              </div>
+            </div>
+          </div>
+          <div class="contact">
+            <img
+              class="contact-icons"
+              src="img/icons/facebook-logo.svg"
+              alt="facebook-logo"
+            />
+            <img
+              class="contact-icons"
+              src="img/icons/twitter-logo.svg"
+              alt="twitter-logo"
+            />
+          </div>
+        </header>
+        <nav>
+          <a href="home.html"><p class="nav-text">Home</p></a>
+          <a href="#"> <p class="nav-text">About Us</p> </a>
+          <a href="#"> <p class="nav-text">Custom Metal Fabrication</p> </a>
+          <a href="#"> <p class="nav-text">Roofing Services</p> </a>
+          <a href="#"> <p class="nav-text">Our Blog</p> </a>
+          <a href="#" class="current"> <p class="nav-text">Contact Us</p> </a>
+        </nav>
+      </section>
+
+    <!--Form Section -->
+      <section class="container">
+        <div class="img-container">
+          <img id="img-box" src="img/contact us.jpg" >
+        </div>
+        
+        <form onsubmit="emailSend(); reset(); return false" class="form">
+            <h1 id="title">Contact Us </h1>
+            <div class="flex">
+              <label> Name
+                <input class="input" type="text" placeholder="Firstname" required="" id="fname">
+              </label> 
+
+              <label>
+                <input class="input" type="text" placeholder="Lastname" required="" id="lname">
+              </label>
+            </div>
+          
+            <label>
+              <input class="input" type="email" placeholder="Email" required="" id="email" >
+            </label>
+            
+            <label>
+              <input class="input" type="tel" placeholder="Mobile Number" required="" id="Mnumber">
+            </label>
+
+            <label id="text-box">Message</label>
+              <textarea class="input" type="text" placeholder="How can we help you?" required="" id="message"></textarea>
+                          <button class="submit-btn"> Send </button>
+        </form>
+      </section>
+
+      <!--Footer Section -->
+       <footer>
+      <div id="footerTop">
+        <p>GET IN TOUCH</p>
+        <h1 class="intro-title">Contact Information</h1>
+        <p>
+          Need our assistance? Connect with us today by fill uping the contact
+          details
+        </p>
+      </div>
+      <div id="footerBot">
+        <p id="contact-num">Call us Today: 978-388-5752</p>
+        <p>9 Amesbly Avenue, Amesbury, MA 8193</p>
+      </div>
+      <div id="footerNav">
+        <hr />
+        <nav id="smol-nav">
+          <a href="home.html"><p class="footer-nav">Home</p></a>
+          <a href="#"> <p class="footer-nav">About Us</p> </a>
+          <a href="#"> <p class="footer-nav">Custom Metal Fabrication</p> </a>
+          <a href="#"> <p class="footer-nav">Roofing Services</p> </a>
+          <a href="#"> <p class="footer-nav">Our Blog</p> </a>
+          <a href="#" class="current"> <p class="footer-nav">Contact Us</p> </a>
+        </nav>
+        <p>
+          Copyright 2023 | Division 7 Roofing Inc. | Designed by National
+          Marketing Agency
+        </p>
+      </div>
+    </footer>
+</body>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script src="js/ContactUs.js"></script>
+
+</html>
