@@ -4,6 +4,11 @@
 
 Welcome to the Finals Project Website! This collaborative project aims to learn about web development. This to be submitted on Dec 18, 2023.
 
+## Contributors
+    - Benedict Avenido aka "ire-zepelli"
+    - Allyssa Ejares aka "Allyssaejares"
+    - Rozencrantz G. Oñada aka "Zenzkie"
+
 ## Pages
 
 - **Home Page:** Given design (image with your family name, together with you team member) 
