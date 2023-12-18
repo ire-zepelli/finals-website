@@ -2,7 +2,7 @@
 
 ## Overview
 
-Welcome to the Finals Project Website! This collaborative project aims to learn about web development. This to be submitted on Dec 18, 2023.
+Welcome to the Finals Project Website! This collaborative project aims to help us learn about web development. This project uses the three muskateers of web development (HTML, CSS, JavaScript) and should be responsive. This to be submitted on Dec 18, 2023.
 
 ## Contributors
     - Benedict Avenido aka "ire-zepelli"
@@ -17,7 +17,7 @@ Welcome to the Finals Project Website! This collaborative project aims to learn 
 
 - **Login/Registration Page:**
 		Login Page
-		input fields should have:
+		-input fields should have:
 			- email/username
 			- password
 
@@ -33,7 +33,8 @@ Welcome to the Finals Project Website! This collaborative project aims to learn 
 			- password
 
 - **Contact Forms:** (Contact Us Page, Inquiry Page)
-    Contact Us Page - create your own design
+
+   		 Contact Us Page - create your own design
 			input fields should have
 				- first_name
 				- last_name
@@ -48,3 +49,6 @@ Welcome to the Finals Project Website! This collaborative project aims to learn 
 				- email
 				- mobile_number
 				- message
+## Features
+	-Responsive Website
+	-User-Friendly
