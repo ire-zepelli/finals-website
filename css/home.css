@@ -259,6 +259,10 @@ button:hover {
   align-items: start;
   width: fit-content;
 }
+.serv-box img{
+  width: 327px;
+  height: 229px;
+}
 .serv-title strong{
   font-weight: 500;
   font: 32px;
